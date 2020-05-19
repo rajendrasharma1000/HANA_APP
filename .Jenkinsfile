@@ -5,7 +5,7 @@ pipeline {
     stages {
         stage("Code Review") {
             steps {
-                sh 'npm install'
+                
                 sh "npm run lint"
             }
         }
