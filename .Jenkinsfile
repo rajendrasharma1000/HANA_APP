@@ -3,9 +3,10 @@ pipeline {
     agent any
 
     stages {
-        stage("prepare") {
+        stage("Code Review") {
             steps {
-                echo 'prepare'
+                sh 'npm install'
+                sh "npm run lint"
             }
         }
         stage('build') {
