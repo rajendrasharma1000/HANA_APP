@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "start": "ui5 serve",
-    "lint": "eslint cpl166ui/webapp cpl166js",
+    "lint": "eslint cpl166ui/webapp",
     "karma": "karma start",
     "karma-ci": "rimraf coverage && karma start karma-ci.conf.js",
     "install": "npm install grunt grunt-cli grunt-nwabap-ui5uploader --save-dev",
